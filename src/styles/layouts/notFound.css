@@ -1,0 +1,324 @@
+.not-found-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #ebf5ff, #ffffff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.not-found-inner {
+  max-width: 48rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.not-found-text {
+  position: relative;
+  margin-bottom: 1.5rem;
+  transition: all 0.7s;
+  transform-origin: center;
+}
+
+.not-found-text.loaded {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.not-found-text.loading {
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+.not-found-404 {
+  font-size: 120px;
+  font-weight: 700;
+  color: var(--primary-accent);
+  opacity: 0.1;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .not-found-404 {
+    font-size: 180px;
+  }
+}
+
+.not-found-airplane-path {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.not-found-airplane-container {
+  position: absolute;
+  height: 50px;
+  width: 300px;
+  top: 50%;
+  left: calc(50% - 150px);
+}
+
+.not-found-airplane {
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  color: var(--primary-accent);
+  left: 10%;
+  animation-delay: 0.5s;
+  animation-duration: 3s;
+}
+
+.not-found-compass {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.not-found-compass-inner {
+  width: 6rem;
+  height: 6rem;
+  transition: all 0.7s;
+}
+
+@media (min-width: 768px) {
+  .not-found-compass-inner {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+.not-found-compass-inner.loaded {
+  transform: rotate(0);
+  opacity: 1;
+}
+
+.not-found-compass-inner.loading {
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+.not-found-card {
+  background: white;
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 42rem;
+  margin-bottom: 2rem;
+  border: 1px solid #f3f4f6;
+  transition: all 0.7s;
+}
+
+@media (min-width: 768px) {
+  .not-found-card {
+    padding: 3rem;
+  }
+}
+
+.not-found-card.loaded {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.not-found-card.loading {
+  transform: translateY(2.5rem);
+  opacity: 0;
+}
+
+.not-found-travel-graphics {
+  position: relative;
+  height: 6rem;
+  margin-bottom: 2.5rem;
+}
+
+.not-found-path-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  border-top: 2px dashed #d1d5db;
+}
+
+.not-found-travel-icon {
+  position: absolute;
+}
+
+.not-found-travel-icon-home {
+  left: 0;
+  top: 0;
+}
+
+.not-found-travel-icon-location {
+  left: 25%;
+  bottom: 0;
+}
+
+.not-found-travel-icon-message {
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.not-found-travel-icon-warning {
+  right: 25%;
+  bottom: 0;
+}
+
+.not-found-travel-icon-sun {
+  right: 0;
+  top: 0;
+}
+
+.not-found-icon-circle {
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.not-found-icon-circle-blue {
+  width: 3rem;
+  height: 3rem;
+  background-color: #ebf8ff;
+}
+
+.not-found-icon-circle-orange {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #feecdc;
+}
+
+.not-found-icon-circle-green {
+  width: 3rem;
+  height: 3rem;
+  background-color: #f0fff4;
+}
+
+.not-found-icon-circle-red {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #fef2f2;
+}
+
+.not-found-icon-circle-yellow {
+  width: 3rem;
+  height: 3rem;
+  background-color: #fefcbf;
+}
+
+.not-found-icon-blue {
+  color: #3b82f6;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.not-found-icon-orange {
+  color: var(--primary-accent);
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.not-found-icon-green {
+  color: #10b981;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.not-found-icon-red {
+  color: #ef4444;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.not-found-icon-yellow {
+  color: #fbbf24;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.not-found-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-accent);
+  color: white;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.not-found-button:hover {
+  background-color: #dd6b20;
+}
+
+.not-found-button.loaded {
+  opacity: 1;
+}
+
+.not-found-button.loading {
+  opacity: 0;
+}
+
+.not-found-button-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.not-found-float-0 {
+  animation-delay: 0s;
+}
+
+.not-found-float-1 {
+  animation-delay: 0.5s;
+}
+
+.not-found-float-2 {
+  animation-delay: 1s;
+}
+
+.not-found-float-3 {
+  animation-delay: 1.5s;
+}
+
+.not-found-float-4 {
+  animation-delay: 2s;
+}
+
+.not-found-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.not-found-subtitle {
+  font-size: 1.25rem;
+  color: var(--primary-accent);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.not-found-description {
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .not-found-title {
+    font-size: 1.875rem;
+  }
+}

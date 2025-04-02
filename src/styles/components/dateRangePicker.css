@@ -1,0 +1,14 @@
+.dateRangePickerContainer {
+  top: var(--dropdown-top);
+  left: var(--dropdown-left);
+  width: var(--dropdown-width);
+  max-width: 630px;
+}
+
+.prevMonthButton {
+  left: -12px;
+}
+
+.nextMonthButton {
+  right: -12px;
+}

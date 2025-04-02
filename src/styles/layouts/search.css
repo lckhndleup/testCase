@@ -1,0 +1,23 @@
+.search-container {
+  width: 100%;
+  margin-top: 32px;
+}
+
+.search-content {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.search-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .search-grid {
+    grid-template-columns: 270px minmax(0, 1fr);
+  }
+}

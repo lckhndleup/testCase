@@ -1,0 +1,185 @@
+.travel-tabs-wrapper {
+  width: 365.41px;
+  height: 40px;
+  border-radius: 8px;
+  gap: 0;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.package-tab-btn {
+  width: 130px;
+  height: 40px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.hotel-tab-btn {
+  width: 107px;
+  height: 40px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.flight-tab-btn {
+  width: 128.41px;
+  height: 40px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+@media (max-width: 1023px) {
+  .flex.justify-center.mb-4 > div[style*='width: 365.41px'],
+  .travel-tabs-wrapper {
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 365.41px !important;
+    height: auto !important;
+    gap: 16px !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+  }
+
+  .flex.justify-center.mb-4 > div[style*='width: 365.41px'] > button,
+  .package-tab-btn,
+  .hotel-tab-btn,
+  .flight-tab-btn {
+    width: 100% !important;
+    margin-bottom: 0 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(4px) !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .mb-4.mt-56 {
+    margin-top: 8px !important;
+  }
+
+  .relative.z-20.container.mx-auto.h-full.flex.flex-col.justify-center.items-center.px-4 {
+    padding-top: 16px !important;
+    justify-content: flex-start !important;
+  }
+
+  .relative.h-\[500px\].overflow-hidden.bg-blue-400 {
+    min-height: 700px !important;
+  }
+
+  .package-tab-btn[class*='bg-white'],
+  .hotel-tab-btn[class*='bg-white'],
+  .flight-tab-btn[class*='bg-white'] {
+    background-color: white !important;
+    color: #142347 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+  }
+
+  .package-tab-btn[class*='bg-white'] span,
+  .hotel-tab-btn[class*='bg-white'] span,
+  .flight-tab-btn[class*='bg-white'] span {
+    color: #142347 !important;
+    font-weight: 600 !important;
+  }
+
+  .package-tab-btn:not([class*='bg-white']),
+  .hotel-tab-btn:not([class*='bg-white']),
+  .flight-tab-btn:not([class*='bg-white']) {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+  }
+
+  .package-tab-btn .flex.items-center,
+  .hotel-tab-btn .flex.items-center,
+  .flight-tab-btn .flex.items-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+
+  .package-tab-btn .flex.items-center > div:first-child,
+  .hotel-tab-btn .flex.items-center > div:first-child,
+  .flight-tab-btn .flex.items-center > div:first-child {
+    position: absolute;
+    left: 50%;
+    margin-left: -40px !important;
+    display: flex;
+    justify-content: center;
+    width: 24px;
+  }
+
+  .package-tab-btn svg,
+  .hotel-tab-btn svg,
+  .flight-tab-btn svg {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  .package-tab-btn span,
+  .hotel-tab-btn span,
+  .flight-tab-btn span {
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mb-4.mt-56 {
+    margin-top: 4px !important;
+  }
+}
+
+.package-tab-btn:focus,
+.package-tab-btn:active,
+.package-tab-btn:focus-visible,
+.hotel-tab-btn:focus,
+.hotel-tab-btn:active,
+.hotel-tab-btn:focus-visible,
+.flight-tab-btn:focus,
+.flight-tab-btn:active,
+.flight-tab-btn:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.travel-tabs-wrapper button,
+.package-tab-btn,
+.hotel-tab-btn,
+.flight-tab-btn {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+.travel-tabs-wrapper button:focus,
+.travel-tabs-wrapper button:active,
+.travel-tabs-wrapper button:focus-visible,
+.package-tab-btn:focus,
+.package-tab-btn:active,
+.package-tab-btn:focus-visible,
+.hotel-tab-btn:focus,
+.hotel-tab-btn:active,
+.hotel-tab-btn:focus-visible,
+.flight-tab-btn:focus,
+.flight-tab-btn:active,
+.flight-tab-btn:focus-visible {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}

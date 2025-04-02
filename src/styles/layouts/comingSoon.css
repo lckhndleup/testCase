@@ -1,0 +1,141 @@
+.coming-soon-container {
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    var(--blue-50, #ebf5ff) 0%,
+    white 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1rem 3rem;
+}
+
+.coming-soon-content {
+  max-width: 48rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.icon-container {
+  position: relative;
+  margin-bottom: 2rem;
+  transition: all 0.7s ease;
+}
+
+.icon-container.loaded {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.icon-container.loading {
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+.clock-container {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+}
+
+.outer-ring {
+  position: absolute;
+  inset: 0;
+  animation: spin 8s linear infinite;
+}
+
+.inner-clock {
+  position: absolute;
+  inset: 1rem;
+}
+
+.clock-face {
+  width: 100%;
+  height: 100%;
+  color: var(--primary-accent);
+}
+
+.clock-hand-hour {
+  transform-origin: center;
+  animation: clock-rotate-slow 12s linear infinite;
+}
+
+.clock-hand-minute {
+  transform-origin: center;
+  animation: clock-rotate-fast 4s linear infinite;
+}
+
+@keyframes clock-rotate-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes clock-rotate-fast {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.coming-soon-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .coming-soon-title {
+    font-size: 2.25rem;
+  }
+}
+
+.coming-soon-description {
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
+
+.home-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-accent);
+  color: white;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #dd7d1b;
+}
+
+.triangle-top {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -0.5rem);
+  animation: pulse 2s infinite;
+}

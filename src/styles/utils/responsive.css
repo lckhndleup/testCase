@@ -1,0 +1,33 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+  header div.hidden.md\:block {
+    display: none !important;
+  }
+
+  header .md\:hidden {
+    display: flex !important;
+  }
+
+  header nav.hidden.md\:flex {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hotel-concept-star-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hotel-concept-container,
+  .star-container {
+    width: 100%;
+  }
+
+  .filter-input {
+    width: 220px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: #ffffff;
+  }
+}

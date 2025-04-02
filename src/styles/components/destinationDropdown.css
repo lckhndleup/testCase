@@ -1,0 +1,6 @@
+.destinationDropdownContainer {
+  top: var(--dropdown-top);
+  left: var(--dropdown-left);
+  width: 250px;
+  max-height: 300px;
+}
